@@ -1,0 +1,1 @@
+# requirejs-stencil-test
