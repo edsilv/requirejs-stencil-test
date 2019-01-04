@@ -10,11 +10,11 @@
 
     <script>
 
-        var deps = ['lib/three.min', 'lib/ami.min'];
+        var deps = ['lib/ami.min'];
 
         document.addEventListener("DOMContentLoaded", function(event) {
-            requirejs(deps, function() {  
-                console.log(AMI);              
+            requirejs(deps, function(d) {
+                console.log(d);         
             });
         });
         
