@@ -10,14 +10,11 @@
 
     <script>
 
-        var deps = ['lib/three.min', 'lib/ami.min', 'scripts/test-dep.js', 'scripts/amiviewer.proxy.js'];
+        var deps = ['lib/three.min', 'lib/ami.min'];
 
         document.addEventListener("DOMContentLoaded", function(event) {
             requirejs(deps, function() {  
                 console.log(AMI);              
-                // var amiviewer = document.createElement('ami-viewer');
-                // amiviewer.setAttribute('series', '36444280,36444294,36444308,36444322,36444336');
-                // document.body.appendChild(amiviewer);
             });
         });
         
