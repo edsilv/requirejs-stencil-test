@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/edsilv/requirejs-stencil-test#readme",
   "dependencies": {
-    "iiif-explorer": "0.0.17",
-    "iiif-gallery": "0.0.25"
+    "@edsilv/stencil-one-test": "0.0.1"
   }
 }

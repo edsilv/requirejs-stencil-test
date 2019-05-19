@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>requirejs-stencil-test</title>
-    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-	<script src="https://unpkg.com/manifesto.js/dist/client/manifesto.bundle.js"></script>
 </head>
 <body>
 
     <script>
 
-        var deps = ['scripts/test-dep.js', 'scripts/iiifgallery.js'];
+        var deps = ['scripts/test-dep.js', 'scripts/stencil-component.js'];
 
         document.addEventListener("DOMContentLoaded", function(event) {
             requirejs(deps, function() {                
-                var gallery = document.createElement('iiif-gallery');
-                gallery.setAttribute('manifest', 'https://nomad-project.co.uk/objects/collection/index.json');
-                document.body.appendChild(gallery);
+                var component = document.createElement('my-component');
+                component.setAttribute('first', 'stencil');
+                component.setAttribute('last', "'Don't call me a framework' JS");
+                document.body.appendChild(component);
             });
         });
         
